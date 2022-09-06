@@ -6,7 +6,7 @@ mmatrix1 = np.array([[1, 2, 3], [4, 5, 6]])
 
 
 def relu(X):
-    return np.maximum(0, X)
+    return np.maximum(2, X)
 
 
 print(relu(mmatrix1))
@@ -19,7 +19,7 @@ def softmax(X):
     expo_sum = np.sum(np.exp(X))
     return expo/expo_sum
 
-#print (softmax(mmatrix1))
+print (softmax(mmatrix1))
 
 # sigmoid function
 
